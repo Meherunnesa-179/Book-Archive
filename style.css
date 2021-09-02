@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    
+    color: darkgoldenrod;
+}
+#submit-btn{
+    background-color: aqua;
+    color: chocolate;
+}
+#spinner{
+    display: none;
+}
+#error-message{
+    display: none;
+}

@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   <section class="container">
+      <!-- seaching field  -->
+      <section class="container m-3 p-3">
+        <div class=" m-5 ">
+          <h1 class="text-center">Welcome To Open_Library</h1>
+        </div>
+        <div class="d-flex m-auto w-50">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search your favourite book"
+                aria-label="Search"
+                id="search-field"
+              />
+              <!-- submit vbuttin -->
+              <button onclick="searchBook()" class="btn btn-outline-primary" type="submit" id="submit-btn">
+                Search
+              </button>
+        </div>
+        <section class="container mt-2">
+
+            <!-- total results found  -->
+            <div id="books-number" class="container bg-dark">
+
+            </div>
+             <!-- Error and Spinner div -->
+        <div>
+          <div id="spinner" class="spinner-grow mt-4" style="margin-left: 50%;" role="status">
+          </div>
+          <h1 id="error-message" class="my-4 text-center text-danger">Insert a valid name</h1>
+      </div>
+      <!-- Results found -->
+     <h1 class="bg-dark text-warning text-center" id="team-numbers"></h1>
+        </section>
+    <!-- books display div  -->
+       <section class="my-5">
+          <div id="container-div" class="row  row-cols-1 row-cols-md-3 g-4  py-auto shadow-lg  ">
+         </div>
+     </section>
+
 <script src="main.js"></script>
 </body>
 </html>
